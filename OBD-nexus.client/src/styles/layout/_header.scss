@@ -1,0 +1,90 @@
+header {
+    align-items: center;
+    background-color: rgb(14 20 36);
+    border: solid 1px rgb(30 41 59);
+    box-shadow: 0 0px 12px 0 rgb(59 130 246 / 0.3);
+    border-radius: 0.5rem;
+    display: flex;
+    font-family: Inter, sans-serif;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    position: fixed;
+    top: 25px;
+    left: 0;
+    right: 0;
+    width: 80%;
+
+    .header-container {
+        align-items: center;
+        display: flex;
+        gap: 24px;
+
+        .header-home-button {
+            width: 2.25rem;
+            height: 2.25rem;
+            border-radius: 0.45rem;
+            border: none;
+            background: linear-gradient(
+                to top right,
+                #2563eb,
+                // blue-600
+                #22d3ee // cyan-400
+            );
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 15px -3px rgb(59 130 246 / 0.3);
+            cursor: pointer;
+            transition: opacity 150ms ease;
+
+            &:hover {
+                opacity: 0.9;
+            }
+
+            svg {
+                color: #fff;
+                width: 1.55rem;
+                height: 1.55rem;
+            }
+        }
+
+        .status-badge {
+            display: flex;
+            align-items: center;
+            column-gap: 0.75rem;
+            background-color: #131b2e;
+            border: 1px solid #1e293b;
+            padding: 0.375rem 0.75rem;
+            border-radius: 9999px;
+            line-height: 1rem;
+            font-weight: 500;
+            font-size: 0.75rem;
+            color: #cbd5e1;
+
+            .status-dot {
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background-color: #10b981;
+                animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            }
+
+            .status-text {
+                color: rgb(34 211 238);
+            }
+
+            @keyframes pulse {
+                0%,
+                100% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}

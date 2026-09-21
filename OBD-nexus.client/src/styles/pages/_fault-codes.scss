@@ -1,0 +1,39 @@
+.fault-codes {
+    font-size: 0.75rem;
+    font-family: Inter, sans-serif;
+    margin: 26px auto;
+
+    h1 {
+        color: rgb(226 232 240);
+        font-size: 1.5rem;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+    }
+
+    .fault-codes-summary-container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        margin: 6px 0px 24px 0px;
+
+        h2 {
+            color: rgb(226 232 240);
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .fault-codes-summary {
+            align-items: center;
+            display: flex;
+            gap: 1rem;
+
+            span {
+                border-radius: 9999px;
+                border: solid 1px;
+                padding: 0.25rem 0.625rem;
+            }
+        }
+    }
+}

@@ -36,7 +36,7 @@
         "description": "Evaporative Emission System Leak Detected",
         "system": "Emissions",
         "severity": "warning",
-        "status": "active",
+        "status": "stored",
         "detected": "2026-09-21T12:05:00"
     },
     {
@@ -76,7 +76,7 @@
         "description": "O2 Sensor Heater Circuit Malfunction",
         "system": "Exhaust",
         "severity": "low",
-        "status": "resolved",
+        "status": "stored",
         "detected": "2026-09-20T18:50:00"
     },
     {
@@ -84,7 +84,7 @@
         "description": "Cylinder 2 Misfire Detected",
         "system": "Engine",
         "severity": "Info",
-        "status": "active",
+        "status": "stored",
         "detected": "2026-09-20T16:25:00"
     },
     {

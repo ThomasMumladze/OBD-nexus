@@ -6,9 +6,7 @@ function App() {
         <div className="app">
             <div className="app--content">
                 <Header />
-                <div className="app--content__inner">
-                    <div style={{ height: "10230px" }}></div>
-                </div>
+                <div className="app--content__inner"></div>
             </div>
         </div>
     );

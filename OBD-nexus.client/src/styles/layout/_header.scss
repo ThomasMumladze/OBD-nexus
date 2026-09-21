@@ -9,10 +9,9 @@ header {
     justify-content: space-between;
     margin: 0 auto;
     padding: 1rem 1.5rem;
-    position: absolute;
-    top: 25px;
-    left: 0;
-    right: 0;
+    position: sticky;
+    margin-top: 2rem;
+    top: 2rem;
     width: 100%;
 
     .header-container {

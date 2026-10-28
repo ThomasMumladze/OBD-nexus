@@ -1,0 +1,33 @@
+.drop-down-menu {
+    position: relative;
+
+    select {
+        appearance: none;
+        background-color: rgb(13 19 34 / var(--tw-bg-opacity, 1));
+        border: solid 1px rgb(30 41 59 / var(--tw-border-opacity, 1));
+        border-radius: 0.75rem;
+        color: rgb(203 213 225 / var(--tw-text-opacity, 1));
+        font-size: 0.75rem;
+        line-height: 1rem;
+        padding-right: 2rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+
+        &:focus {
+            border-color: rgb(59 130 246 / var(--tw-border-opacity, 1));
+            outline: 2px solid transparent;
+            outline-offset: 2px;
+        }
+    }
+
+    span {
+        color: rgb(100 116 139 / var(--tw-text-opacity, 1));
+        position: absolute;
+        right: 0.5rem;
+        top: 55%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        font-size: 1rem;
+    }
+}

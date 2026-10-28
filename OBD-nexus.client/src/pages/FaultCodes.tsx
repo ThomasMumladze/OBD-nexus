@@ -41,7 +41,10 @@ const FaultCodes = () => {
             <div className="filter-container">
                 <div className="filter">
                     <Input />
-                    <DropDawnMenu />
+                    <DropDawnMenu dropDawnTitle="Category: All Systems" />
+                    <DropDawnMenu dropDawnTitle="Severity: All Levels" />
+                    <DropDawnMenu dropDawnTitle="Status: All State" />
+                    <button>Reset Filters</button>
                 </div>
 
                 <div className="active-filters">

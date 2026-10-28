@@ -4,7 +4,7 @@ const Input = () => {
     return (
         <div className="input-container">
             <IoMdSearch className="search-icon" />
-            <input type="text" id="input" name="input" />
+            <input placeholder="Search By code or description.." type="text" id="input" name="input" />
         </div>
     );
 };

@@ -119,13 +119,34 @@
     }
 
     .fault-code-table-footer {
+        align-items: center;
         background-color: rgb(13 19 34 / 0.5);
         border-top: solid 1px #1e293b;
+        display: flex;
+        justify-content: space-between;
         padding: 1rem 1.5rem;
 
         p {
             span {
                 color: rgb(226 232 240 / var(--tw-text-opacity, 1));
+            }
+        }
+
+        .pagination {
+            align-items: center;
+            display: flex;
+            gap: 0.5rem;
+
+            button {
+                border-radius: 0.5rem;
+                color: rgb(148 163 184 / var(--tw-text-opacity, 1));
+                font-size: 0.73rem;
+                font-weight: 300;
+                padding: 0.375rem 0.75rem;
+
+                &:hover {
+                    color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+                }
             }
         }
     }

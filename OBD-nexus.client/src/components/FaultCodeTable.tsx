@@ -1,4 +1,5 @@
 import { LuArrowDownUp } from "react-icons/lu";
+import Button from "./Button";
 
 interface FaultCode {
     data: any;
@@ -67,7 +68,13 @@ const FaultCodeTable = (props: FaultCode) => {
                     Showing <span>1-10</span> of <span>{data.length}</span> results
                 </p>
 
-                <div className="pagination"></div>
+                <div className="pagination">
+                    <Button disabled btnFunction={() => {}} content="Prev" className="btn-secondary" />
+                    {Array.from({ length: 5 }).map((_, index: number) => (
+                        <Button key={index} btnFunction={() => {}} content={`${index + 1}`} className="btn-secondary" />
+                    ))}
+                    <Button btnFunction={() => {}} content="Next" className="btn-secondary" />
+                </div>
             </div>
         </div>
     );

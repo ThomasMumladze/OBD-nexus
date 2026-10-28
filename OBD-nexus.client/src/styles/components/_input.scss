@@ -1,0 +1,33 @@
+.input-container {
+    align-items: center;
+    display: flex;
+    background-color: #0d1322;
+    border: solid 1px rgb(30 41 59);
+    border-radius: 0.75rem;
+    display: flex;
+    position: relative;
+
+    input {
+        background-color: transparent;
+        border: none;
+        border-radius: 0.75rem;
+        color: rgb(226 232 240);
+        font-size: 0.75rem;
+        line-height: 1rem;
+        padding: 0.5rem 1rem 0.5rem 2.5rem;
+        position: relative;
+        width: 100%;
+        z-index: 10;
+
+        &:focus {
+            outline: dodgerblue solid 1px;
+        }
+    }
+    svg {
+        color: rgb(148 163 184 / var(--tw-text-opacity, 1));
+        position: absolute;
+        padding-left: 0.875rem;
+        height: 33px;
+        width: 33px;
+    }
+}

@@ -36,4 +36,39 @@
             }
         }
     }
+
+    .filter-container {
+        background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
+        border-bottom: solid 1px #1e293b;
+        border: solid 1px #1e293b;
+        border-radius: 1rem;
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+        width: 100%;
+
+        .active-filters {
+            align-items: center;
+            border-top: solid 1px;
+            border-color: #1e293b;
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 0.75rem;
+            padding: 0.75rem 0.75rem 0rem 0.75rem;
+
+            p {
+                color: rgb(100 116 139);
+                font-size: 0.8rem;
+                text-transform: capitalize;
+            }
+
+            span {
+                color: rgb(96 165 250);
+                background-color: rgb(59 130 246 / 0.1);
+                border: solid 1px rgb(59 130 246 / 0.2);
+                border-radius: 0.5rem;
+                display: inline-block;
+                padding: 0.27rem 0.625rem;
+            }
+        }
+    }
 }

@@ -45,7 +45,7 @@ const FaultCodeTable = (props: FaultCode) => {
                 </thead>
                 <tbody>
                     {data &&
-                        data.slice(0, 10).map((item: any, index: number) => (
+                        data.slice(0, 8).map((item: any, index: number) => (
                             <tr key={index}>
                                 <td className="fault-code">{item.code}</td>
                                 <td className="fault-description">{item.description}</td>

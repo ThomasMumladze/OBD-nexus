@@ -1,5 +1,7 @@
 import fakeData from "../assets/data/fakeData.json";
+import DropDawnMenu from "../components/DropDawnMenu";
 import FaultCodeTable from "../components/FaultCodeTable";
+import Input from "../components/Input";
 
 const FaultCodes = () => {
     const criticalActiveCount = fakeData.filter((item) => item.severity === "critical" && item.status === "active").length;
@@ -33,6 +35,20 @@ const FaultCodes = () => {
                     <span className="pending">{pendingStatus} pending </span>
                     <span className="stored">{storedStatus} stored </span>
                     <span className="resolved">{resolvedStatus} resolved </span>
+                </div>
+            </div>
+
+            <div className="filter-container">
+                <div className="filter">
+                    <Input />
+                    <DropDawnMenu />
+                </div>
+
+                <div className="active-filters">
+                    <p>active filters:</p>
+                    {Array.from({ length: 3 }).map((_, index: number) => (
+                        <span key={index}>Category: Chassis</span>
+                    ))}
                 </div>
             </div>
             <FaultCodeTable data={fakeData} />

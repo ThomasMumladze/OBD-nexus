@@ -10,7 +10,7 @@ const Button = (props: Props) => {
     const { content, btnFunction, className, svgIcon, disabled } = props;
 
     return (
-        <button className={`btn   ${className}`} onClick={btnFunction} disabled>
+        <button className={`btn   ${className}`} onClick={btnFunction} disabled={disabled}>
             {svgIcon && <span className="svg-icon">{svgIcon}</span>}
             {content}
         </button>

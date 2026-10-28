@@ -71,7 +71,12 @@ const FaultCodeTable = (props: FaultCode) => {
                 <div className="pagination">
                     <Button disabled btnFunction={() => {}} content="Prev" className="btn-secondary" />
                     {Array.from({ length: 5 }).map((_, index: number) => (
-                        <Button key={index} btnFunction={() => {}} content={`${index + 1}`} className="btn-secondary" />
+                        <Button
+                            key={index}
+                            btnFunction={() => {}}
+                            content={`${index + 1}`}
+                            className={`${index === 0 ? "btn-primary active-page" : ""} btn-secondary`}
+                        />
                     ))}
                     <Button btnFunction={() => {}} content="Next" className="btn-secondary" />
                 </div>

@@ -1,4 +1,6 @@
 import "./App.scss";
+
+import SideBar from "./components/SideBar";
 import Header from "./layout/Header";
 import FaultCodes from "./pages/FaultCodes";
 
@@ -6,9 +8,12 @@ function App() {
     return (
         <div className="app">
             <div className="app--content">
-                <Header />
-                <div className="app--content__inner">
-                    <FaultCodes />
+                <SideBar />
+                <div>
+                    <Header />
+                    <div className="app--content__inner">
+                        <FaultCodes />
+                    </div>
                 </div>
             </div>
         </div>

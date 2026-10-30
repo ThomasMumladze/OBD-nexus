@@ -1,0 +1,87 @@
+.sidebar {
+    background-color: rgb(14 20 36);
+    border: solid 1px rgb(30 41 59);
+
+    .sidebar-content {
+        height: 100%;
+        display: inline-flex;
+        flex-direction: column;
+
+        .sidebar-menu {
+            flex-grow: 2;
+            overflow: auto;
+            padding: 1rem 1.5rem;
+
+            &::-webkit-scrollbar {
+                width: 3px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+            &::-webkit-scrollbar-thumb {
+                background: #888;
+                border-radius: 0px;
+            }
+
+            h3 {
+                color: rgb(166, 169, 172);
+                font-family: "Roboto";
+                font-weight: 400;
+                font-size: 0.6rem;
+                letter-spacing: 0.1rem;
+                margin-bottom: 0.35rem;
+                text-transform: uppercase;
+            }
+
+            ul {
+                margin-bottom: 1.25rem;
+
+                li {
+                    border-radius: 0.55rem;
+                    overflow: hidden;
+
+                    a {
+                        color: #fff;
+                        display: block;
+                        font-family: "Inter", sans-serif;
+                        font-size: 0.8rem;
+                        padding: 0.5rem 1rem;
+                        text-wrap: nowrap;
+                    }
+
+                    &:hover {
+                        a {
+                            background: #5c8af7;
+                            background: linear-gradient(90deg, rgba(92, 138, 247, 1) 38%, rgba(28, 79, 217, 1) 100%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .app-version {
+        flex-grow: 1;
+        font-family: "Inter", sans-serif;
+        padding: 1rem 0.5rem;
+
+        > div {
+            background-color: #141c2e;
+            border: solid 1px #5c8af7;
+            border-radius: 0.5rem;
+            padding: 1rem 1.5rem;
+        }
+
+        h2 {
+            font-size: 0.65rem;
+            font-weight: 400;
+            color: #fff;
+        }
+
+        span {
+            color: #10b981;
+            font-size: 0.7rem;
+        }
+    }
+}

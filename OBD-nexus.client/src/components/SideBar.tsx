@@ -1,4 +1,11 @@
 const SideBar = () => {
+    let diagnostics = [
+        { content: "quick scan", status: "new" },
+        { content: "Full System Scan", status: "" },
+        { content: "ECU Scanner", status: "updated" },
+        { content: "Fault Codes", status: "" },
+    ];
+
     return (
         <aside className="sidebar">
             <div className="sidebar-content">
@@ -6,18 +13,21 @@ const SideBar = () => {
                     <div className="diagnostics">
                         <h3>Diagnostics</h3>
                         <ul>
-                            <li>
-                                <a href="">quick Scan</a>
-                            </li>
-                            <li>
-                                <a href="">Full System Scan</a>
-                            </li>
-                            <li>
-                                <a href="">ECU Scanner</a>
-                            </li>
-                            <li>
-                                <a href="">Fault Codes</a>
-                            </li>
+                            {diagnostics.map((item, _) => (
+                                <li key={_}>
+                                    <a href="">
+                                        {item.content}
+
+                                        {item.status.toLowerCase() == "new" ? (
+                                            <span className={`${item.status}`}>new</span>
+                                        ) : null}
+
+                                        {item.status.toLowerCase() == "updated" ? (
+                                            <span className={`${item.status}`}>updated</span>
+                                        ) : null}
+                                    </a>
+                                </li>
+                            ))}
                         </ul>
                     </div>
 

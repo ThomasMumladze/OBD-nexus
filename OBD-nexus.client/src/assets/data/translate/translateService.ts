@@ -18,7 +18,7 @@ const languageService = () => {
 
             if (keyCode.length != 2) return;
 
-            return setLanguage(keyCode);
+            setLanguage(keyCode);
         },
 
         [],
@@ -33,7 +33,11 @@ const languageService = () => {
         ka: KA_LANG,
     };
 
+    type LanguageCode = keyof typeof translations;
+    const isSupportedLanguage = Object.keys(translations) as LanguageCode[];
+
     return {
+        isSupportedLanguage,
         language,
         translations: translations[language as keyof typeof translations],
         changeLanguage,

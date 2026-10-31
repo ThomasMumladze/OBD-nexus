@@ -10,6 +10,7 @@
         font-size: 0.75rem;
         line-height: 1rem;
         padding: 0.5rem 2rem 0.5rem 1rem;
+        text-transform: capitalize;
 
         &:focus {
             border-color: rgb(59 130 246 / var(--tw-border-opacity, 1));

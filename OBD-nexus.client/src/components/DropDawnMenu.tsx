@@ -1,20 +1,24 @@
 import { PiCaretDownBold } from "react-icons/pi";
 
 interface Props {
-    dropDawnTitle: string;
+    dropDawnTitle?: string;
+    options: string[];
+    handleValue?: any;
+    handleValueChange?: any;
 }
 
 const DropDawnMenu = (props: Props) => {
-    const { dropDawnTitle } = props;
+    const { dropDawnTitle = "", options = [], handleValue, handleValueChange } = props;
 
     return (
         <div className="drop-down-menu">
-            <select>
-                <option value="category">{dropDawnTitle}</option>
-                <option value="Powertrain">Powertrain (P)</option>
-                <option value="Body">Body (B)</option>
-                <option value="Chassis">Chassis (C)</option>
-                <option value="Network">Network (U)</option>
+            <select value={handleValue} onChange={(e) => handleValueChange(e.target.value)}>
+                {dropDawnTitle?.length > 3 ? <option>{dropDawnTitle}</option> : null}
+                {options.map((item, _) => (
+                    <option value={item} key={_}>
+                        {item}
+                    </option>
+                ))}
             </select>
 
             <span>

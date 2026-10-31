@@ -1,3 +1,6 @@
+import { PiCaretRightBold } from "react-icons/pi";
+import { GoDotFill } from "react-icons/go";
+
 const SideBar = () => {
     let diagnostics = [
         { content: "quick scan", status: "new" },
@@ -35,7 +38,10 @@ const SideBar = () => {
                         <h3>Live Monitoring</h3>
                         <ul>
                             <li>
-                                <a href="">Live Data</a>
+                                <a className="active" href="">
+                                    Live Data
+                                    <PiCaretRightBold />
+                                </a>
                             </li>
                             <li>
                                 <a href="">Sensor Graphs</a>
@@ -109,12 +115,16 @@ const SideBar = () => {
                         </ul>
                     </div>
                 </div>
+            </div>
 
-                <div className="app-version">
-                    <div>
-                        <h2>OBD-nexus Firmware</h2>
-                        <span>v1.0.0-beta {"(Up to date)"}</span>
-                    </div>
+            <div className="firmware-footer">
+                <div className="firmware-card">
+                    <p className="firmware-title">OBD-nexus Firmware</p>
+
+                    <p className="firmware-status">
+                        <span className="status-dot" />
+                        v1.0.0-beta (Up to date)
+                    </p>
                 </div>
             </div>
         </aside>

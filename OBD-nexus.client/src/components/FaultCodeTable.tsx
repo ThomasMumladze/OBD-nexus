@@ -7,6 +7,7 @@ interface FaultCode {
 
 const FaultCodeTable = (props: FaultCode) => {
     const { data } = props;
+
     return (
         <div className="fault-code-table-container">
             <table className="fault-code-table">

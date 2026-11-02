@@ -1,14 +1,19 @@
+import { useOutletContext } from "react-router";
+
 import fakeData from "../assets/data/fakeData.json";
 import DropDawnMenu from "../components/DropDawnMenu";
 import FaultCodeTable from "../components/FaultCodeTable";
 import Input from "../components/Input";
 
 interface Props {
-    translations: any;
+    changeLanguage: (language: string) => void;
+    language: string;
+    translations: Record<string, any>;
+    isSupportedLanguage: ("en" | "ka")[];
 }
 
-const FaultCodes = (props: Props) => {
-    const { translations } = props;
+const FaultCodes = () => {
+    const { changeLanguage, language, translations, isSupportedLanguage } = useOutletContext<Props>();
 
     const criticalActiveCount = fakeData.filter((item) => item.severity === "critical" && item.status === "active").length;
     const warningActiveCount = fakeData.filter((item) => item.severity === "warning").length;

@@ -6,19 +6,20 @@ import SideBar from "./components/SideBar";
 
 import Header from "./layout/Header";
 
-import FaultCodes from "./pages/FaultCodes";
+import Root from "./pages/Root";
 
 function App() {
-    const { changeLanguage, language, translations, isSupportedLanguage } = languageService();
+    const { ...languageContext } = languageService();
 
     return (
         <div className="app">
             <div className="app--content">
                 <SideBar />
                 <div>
-                    <Header changeLanguage={changeLanguage} isSupportedLanguage={isSupportedLanguage} language={language} />
+                    <Header {...languageContext} />
+
                     <div className="app--content__inner">
-                        <FaultCodes translations={translations} />
+                        <Root {...languageContext} />
                     </div>
                 </div>
             </div>

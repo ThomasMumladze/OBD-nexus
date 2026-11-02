@@ -2,7 +2,7 @@ import Button from "../components/Button";
 
 import { MdHome } from "react-icons/md";
 import { LuHardDriveUpload } from "react-icons/lu";
-import { AiOutlineDelete } from "react-icons/ai";
+import { TfiReload } from "react-icons/tfi";
 
 import DropDawnMenu from "../components/DropDawnMenu";
 
@@ -44,7 +44,7 @@ const Header = (props: Props) => {
                         btnFunction={() => {}}
                         content="reset error codes"
                         className="btn-primary"
-                        svgIcon={<AiOutlineDelete />}
+                        svgIcon={<TfiReload />}
                     />
                 </div>
             </div>

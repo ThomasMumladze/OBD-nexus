@@ -1,5 +1,5 @@
 import { PiCaretRightBold } from "react-icons/pi";
-import { GoDotFill } from "react-icons/go";
+import { Link } from "react-router/internal/react-server-client";
 
 const SideBar = () => {
     let diagnostics = [
@@ -110,7 +110,12 @@ const SideBar = () => {
                                 <a href="">Diagnostic Reports</a>
                             </li>
                             <li>
-                                <a href="">Scan History</a>
+                                <Link
+                                    className={`${location.pathname === "/scan-history" ? "active" : ""}`}
+                                    to="/scan-history"
+                                >
+                                    Scan History
+                                </Link>
                             </li>
                         </ul>
                     </div>

@@ -1,0 +1,70 @@
+.summary-card {
+    background-color: #0e1424;
+    border: 1px solid #1e2a45;
+    border-radius: 10px;
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition:
+        transform 0.15s ease,
+        border-color 0.15s ease;
+    text-wrap: nowrap;
+
+    &--left {
+        display: flex;
+        flex-direction: column;
+        gap: 0.35rem;
+
+        span {
+            font-size: 0.78rem;
+            font-family: Inter, sans-serif;
+            font-weight: 500;
+            color: #8b9bb4;
+        }
+
+        p {
+            font-size: 1.75rem;
+            font-weight: 800;
+            font-family: "JetBrains Mono", "Fira Code", "Courier New", monospace;
+            color: #f1f5f9;
+            line-height: 1;
+        }
+    }
+
+    &--icon {
+        min-width: 44px;
+        width: 44px;
+        height: 44px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            font-size: 1.5rem;
+            display: block;
+            vertical-align: middle;
+        }
+    }
+
+    .Total {
+        background-color: rgba(37, 99, 235, 0.15);
+        color: #3b82f6;
+    }
+
+    .Critical {
+        background-color: rgba(239, 68, 68, 0.15);
+        color: #ef4444;
+    }
+
+    .Warnings {
+        background-color: rgba(245, 158, 11, 0.15);
+        color: #f59e0b;
+    }
+
+    .Last {
+        background-color: rgba(16, 185, 129, 0.15);
+        color: #10b981;
+    }
+}

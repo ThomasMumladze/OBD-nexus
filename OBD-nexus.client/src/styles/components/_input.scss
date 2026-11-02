@@ -1,33 +1,38 @@
 .input-container {
     align-items: center;
     background-color: #0d1322;
-    border: solid 1px rgb(30 41 59);
     border-radius: 0.75rem;
     display: flex;
     flex: 1 1 0%;
     position: relative;
 
     input {
-        background-color: transparent;
-        border: none;
-        border-radius: 0.75rem;
-        color: rgb(226 232 240);
-        font-size: 0.75rem;
-        line-height: 1rem;
-        padding: 0.5rem 1rem 0.5rem 2.5rem;
-        position: relative;
         width: 100%;
-        z-index: 10;
+        background-color: #131b2e;
+        border: 1px solid #1e2a45;
+        border-radius: 6px;
+        color: #f1f5f9 !important;
+        padding: 0.5rem 0.75rem 0.5rem 2.25rem;
+        color: var(--text-primary);
+        font-size: 0.85rem;
+        outline: none;
+        transition: border-color 0.15s ease;
 
         &:focus {
-            outline: dodgerblue solid 1px;
+            outline: #2563eb solid 1px;
+        }
+
+        &::placeholder {
+            color: #53647e;
         }
     }
     svg {
-        color: rgb(148 163 184 / var(--tw-text-opacity, 1));
         position: absolute;
-        padding-left: 0.875rem;
-        height: 33px;
-        width: 33px;
+        left: 0.75rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #53647e;
+        width: 16px;
+        height: 16px;
     }
 }

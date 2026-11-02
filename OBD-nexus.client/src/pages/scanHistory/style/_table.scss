@@ -1,0 +1,128 @@
+.scan-history-table {
+    background-color: #0e1424;
+    border: 1px solid #1e2a45;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .scan--table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        font-size: 0.85rem;
+
+        thead {
+            tr {
+                th {
+                    background-color: rgba(0, 0, 0, 0.2);
+                    color: #53647e;
+                    font-weight: 700;
+                    font-size: 0.7rem;
+                    letter-spacing: 0.06em;
+                    padding: 0.9rem 1.25rem;
+                    border-bottom: 1px solid #1e2a45;
+                    text-transform: uppercase;
+                    user-select: none;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                transition: background-color 0.15s ease;
+                cursor: pointer;
+
+                td {
+                    padding: 1rem 1.25rem;
+                    border-bottom: 1px solid #172036;
+                    color: #f1f5f9;
+                    vertical-align: middle;
+                    text-transform: capitalize;
+
+                    .vehicle-cell-sub {
+                        font-size: 0.72rem;
+                        color: #53647e;
+                        font-family: "JetBrains Mono", "Fira Code", "Courier New", monospace;
+                    }
+
+                    .dtc-badge-group {
+                        display: flex;
+                        gap: 0.35rem;
+                        flex-wrap: wrap;
+
+                        .dtc-chip {
+                            background-color: rgba(255, 255, 255, 0.06);
+                            border: 1px solid #1e2a45;
+                            padding: 0.25rem 0.45rem;
+                            border-radius: 4px;
+                            font-family: "JetBrains Mono", "Fira Code", "Courier New", monospace;
+                            font-size: 0.72rem;
+                            color: #8b9bb4;
+                        }
+                    }
+
+                    .status-badge {
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 0.4rem;
+                        padding: 0.4rem 0.85rem;
+                        border-radius: 9999px;
+                        font-size: 0.72rem;
+                        font-weight: 700;
+                        letter-spacing: 0.02em;
+                        text-transform: capitalize;
+                    }
+
+                    .action-btn-group {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.4rem;
+
+                        .icon-action-btn {
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 6px;
+                            background-color: #131b2e;
+                            border: 1px solid #1e2a45;
+                            color: #8b9bb4;
+                            display: flex;
+                            align-items: center;
+                            font-size: 1rem;
+                            justify-content: center;
+                            cursor: pointer;
+                            transition: all 0.15s ease;
+
+                            &:hover {
+                                color: #f1f5f9;
+                                border-color: #3b82f6;
+                                background-color: rgba(59, 130, 246, 0.1);
+                            }
+                        }
+
+                        .delete-btn {
+                            &:hover {
+                                color: #ef4444;
+                                border-color: #ef4444;
+                                background-color: rgba(239, 68, 68, 0.1);
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    background-color: #17223b;
+                }
+            }
+        }
+    }
+
+    .table-footer {
+        padding: 0.9rem 1.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid var(--border-color);
+        background-color: var(--bg-panel);
+        font-size: 0.8rem;
+        color: var(--text-secondary);
+    }
+}

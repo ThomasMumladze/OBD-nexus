@@ -78,7 +78,10 @@ const scanHistory: ScanHistory[] = [
     },
 ];
 
-const Table = () => {
+interface TableProps {
+    handleOpenDrawerPanel: () => void;
+}
+const Table = (props: TableProps) => {
     return (
         <div className="scan-history-table">
             <div>
@@ -120,7 +123,7 @@ const Table = () => {
                                 </td>
                                 <td>
                                     <div className="action-btn-group">
-                                        <button className="icon-action-btn">
+                                        <button className="icon-action-btn" onClick={props.handleOpenDrawerPanel}>
                                             <IoEyeOutline />
                                         </button>
                                         <button className="icon-action-btn">

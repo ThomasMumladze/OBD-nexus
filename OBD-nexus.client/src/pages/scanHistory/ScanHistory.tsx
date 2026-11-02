@@ -1,3 +1,6 @@
+import { useState } from "react";
+
+import DrawerPanel from "./components/DrawerPanel";
 import Head from "./components/Head";
 import SummaryCard from "./components/SummaryCard";
 import Table from "./components/Table";
@@ -23,6 +26,12 @@ const scanStats = [
 ];
 
 const ScanHistory = () => {
+    const [drawerPanelOpen, setDrawerPanelOpen] = useState(false);
+
+    const handleOpenDrawerPanel = () => {
+        setDrawerPanelOpen(true);
+    };
+
     return (
         <div className="scan-history">
             <Head />
@@ -40,8 +49,10 @@ const ScanHistory = () => {
             </section>
 
             <section className="scan-history-table">
-                <Table />
+                <Table handleOpenDrawerPanel={handleOpenDrawerPanel} />
             </section>
+
+            {drawerPanelOpen && <DrawerPanel setDrawerPanelOpen={setDrawerPanelOpen} />}
         </div>
     );
 };

@@ -13,7 +13,7 @@ interface Props {
 }
 
 const FaultCodes = () => {
-    const { changeLanguage, language, translations, isSupportedLanguage } = useOutletContext<Props>();
+    const { translations } = useOutletContext<Props>();
 
     const criticalActiveCount = fakeData.filter((item) => item.severity === "critical" && item.status === "active").length;
     const warningActiveCount = fakeData.filter((item) => item.severity === "warning").length;

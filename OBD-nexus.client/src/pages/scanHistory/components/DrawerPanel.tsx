@@ -1,6 +1,5 @@
 import { IoDocumentTextOutline } from "react-icons/io5";
 import { AiOutlineClose } from "react-icons/ai";
-import Button from "../../../components/Button";
 
 interface DrawerPanelProps {
     setDrawerPanelOpen: (open: boolean) => void;

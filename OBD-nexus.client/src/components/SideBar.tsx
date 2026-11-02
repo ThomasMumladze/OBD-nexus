@@ -1,4 +1,4 @@
-import { PiCaretRightBold } from "react-icons/pi";
+// import { PiCaretRightBold } from "react-icons/pi";
 import { Link } from "react-router/internal/react-server-client";
 
 const SideBar = () => {
@@ -34,7 +34,7 @@ const SideBar = () => {
                         </ul>
                     </div>
 
-                    <div className="live-Monitoring">
+                    {/* <div className="live-Monitoring">
                         <h3>Live Monitoring</h3>
                         <ul>
                             <li>
@@ -50,9 +50,9 @@ const SideBar = () => {
                                 <a href="">Data Logging</a>
                             </li>
                         </ul>
-                    </div>
+                    </div> */}
 
-                    <div className="advanced-tools">
+                    {/* <div className="advanced-tools">
                         <h3>Advanced Tools</h3>
                         <ul>
                             <li>
@@ -84,9 +84,9 @@ const SideBar = () => {
                                 <a href="#">Network Diagnostics</a>
                             </li>
                         </ul>
-                    </div>
+                    </div> */}
 
-                    <div className="vehicle-health">
+                    {/* <div className="vehicle-health">
                         <h3>Vehicle Health</h3>
                         <ul>
                             <li>
@@ -102,13 +102,14 @@ const SideBar = () => {
                                 <a href="">EVAP Test</a>
                             </li>
                         </ul>
-                    </div>
+                    </div> */}
+
                     <div className="reports">
                         <h3>Reports</h3>
                         <ul>
-                            <li>
+                            {/* <li>
                                 <a href="">Diagnostic Reports</a>
-                            </li>
+                            </li> */}
                             <li>
                                 <Link
                                     className={`${location.pathname === "/scan-history" ? "active" : ""}`}

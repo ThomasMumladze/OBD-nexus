@@ -1,12 +1,8 @@
 import Button from "../components/Button";
 
 import { MdHome } from "react-icons/md";
-import { CgExport } from "react-icons/cg";
+import { LuHardDriveUpload } from "react-icons/lu";
 import { AiOutlineDelete } from "react-icons/ai";
-
-import language_svg from "../assets/images/world.png";
-import ka_flag from "../assets/images/flag.png";
-import uk_flag from "../assets/images/united-kingdom.png";
 
 import DropDawnMenu from "../components/DropDawnMenu";
 
@@ -38,10 +34,15 @@ const Header = (props: Props) => {
                 </div>
 
                 <div className="header-buttons">
-                    <Button btnFunction={() => {}} content="import" className="btn-secondary" svgIcon={<CgExport />} />
                     <Button
                         btnFunction={() => {}}
-                        content="clear codes"
+                        content="export csv"
+                        className="btn-secondary"
+                        svgIcon={<LuHardDriveUpload />}
+                    />
+                    <Button
+                        btnFunction={() => {}}
+                        content="reset error codes"
                         className="btn-primary"
                         svgIcon={<AiOutlineDelete />}
                     />

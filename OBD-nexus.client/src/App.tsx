@@ -1,10 +1,12 @@
 import "./App.scss";
 
-import SideBar from "./components/SideBar";
-import Header from "./layout/Header";
-import FaultCodes from "./pages/FaultCodes";
-
 import languageService from "./assets/data/translate/translateService";
+
+import SideBar from "./components/SideBar";
+
+import Header from "./layout/Header";
+
+import FaultCodes from "./pages/FaultCodes";
 
 function App() {
     const { changeLanguage, language, translations, isSupportedLanguage } = languageService();

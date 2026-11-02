@@ -1,14 +1,16 @@
 .btn {
     align-items: center;
-    border-radius: 0.75rem;
-    background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
-    color: rgb(203 213 225 / var(--tw-text-opacity, 1));
+    border-radius: 0.5rem;
+    background-color: rgb(14 19 31 / var(--tw-bg-opacity, 1));
+    color: #fff;
     display: flex;
-    gap: 8px;
-    font-size: 0.85rem;
-    font-weight: 600;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    font-family: inherit;
+    font-weight: 500;
     line-height: 1rem;
     padding: 0.5rem 1rem;
+    text-transform: capitalize;
 
     svg {
         font-size: 1rem;
